@@ -6,8 +6,9 @@
 package model.character;
 
 import model.Character;
+import model.weapon.magicspells.PaladinSpell;
 
-public class Paladin extends Character {
+public class Paladin extends Character implements PaladinSpell {
     private final int manaPoint;
 
     {

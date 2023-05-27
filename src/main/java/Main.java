@@ -1,5 +1,5 @@
 
-import view.ViewWorkingConstructor;
+import view.comander.NPCWorker;
 
 /**
  * @author Dmitrii Klochkov
@@ -7,10 +7,11 @@ import view.ViewWorkingConstructor;
  * Time:8:58
  */
 
+
 public class Main {
+
     public static void main(String[] args) {
-        ViewWorkingConstructor worker = new ViewWorkingConstructor();
-        worker.createInfantryBarracks();
-        worker.createDivineTemple();
+        NPCWorker worker = new NPCWorker();
+        worker.showMenuWorker();
     }
 }

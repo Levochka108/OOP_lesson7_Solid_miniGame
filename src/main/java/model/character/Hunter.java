@@ -9,7 +9,11 @@ import model.Character;
 import model.weapon.Bow;
 
 public class Hunter extends Character implements Bow {
-    private int damage;
+   int attack;
+    public Hunter(String name, int hpPoint , int attack) {
+        super(name, hpPoint);
+        this.attack = attack;
+    }
     public Hunter(String name, int hpPoint) {
         super(name, hpPoint);
     }
@@ -18,7 +22,5 @@ public class Hunter extends Character implements Bow {
         return "npc: Hunter is radu! \n"+ getName()+" Hp:"+getHpPoint();
     }
 
-    @Override
-    public void getDamage() {
-    }
+
 }

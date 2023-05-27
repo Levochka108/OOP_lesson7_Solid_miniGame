@@ -1,5 +1,5 @@
 package model.weapon;
 
-public interface Bow {
-    void getDamage();
+public interface Bow extends Weapon {
+
 }

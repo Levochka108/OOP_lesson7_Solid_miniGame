@@ -1,4 +1,4 @@
 package model.weapon;
 
-public interface MagicStaff {
+public interface MagicStaff extends Weapon{
 }

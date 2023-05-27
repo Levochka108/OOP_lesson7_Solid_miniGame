@@ -1,4 +1,4 @@
 package model.weapon;
 
-public interface SwordAndShield {
+public interface SwordAndShield extends Weapon {
 }

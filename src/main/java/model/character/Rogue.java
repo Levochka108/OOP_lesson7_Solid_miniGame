@@ -9,6 +9,11 @@ import model.Character;
 import model.weapon.Daggers;
 
 public class Rogue extends Character implements Daggers {
+    int attack;
+    public Rogue(String name, int hpPoint ,int attack) {
+        super(name, hpPoint);
+        this.attack = attack;
+    }
     public Rogue(String name, int hpPoint) {
         super(name, hpPoint);
     }

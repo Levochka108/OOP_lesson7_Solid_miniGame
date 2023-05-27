@@ -1,4 +1,6 @@
 package model.weapon.magicspells;
 
-public interface PaladinSpell {
+import model.weapon.Weapon;
+
+public interface PaladinSpell extends Weapon {
 }

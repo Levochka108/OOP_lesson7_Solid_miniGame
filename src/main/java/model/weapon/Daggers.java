@@ -1,5 +1,5 @@
 package model.weapon;
 
-public interface Daggers {
+public interface Daggers extends Weapon {
 
 }

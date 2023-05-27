@@ -5,13 +5,17 @@
  */
 package model;
 
-public abstract class Character {
+import model.weapon.Weapon;
+
+public abstract class Character  implements Weapon {
     String name;
     int hpPoint;
+    int attack;
 
     public Character(String name, int hpPoint) {
         this.name = name;
         this.hpPoint = hpPoint;
+
     }
 
     public String getName() {
@@ -20,5 +24,17 @@ public abstract class Character {
 
     public int getHpPoint() {
         return hpPoint;
+    }
+
+    @Override
+    public void attack(Character target) {
+        takeDamage(attack);
+    }
+
+    public void defence(){
+        System.out.println( getName() +" защищается");
+    }
+    public void takeDamage(int amount){
+        hpPoint -= amount;
     }
 }

@@ -10,15 +10,19 @@ import model.weapon.MagicStaff;
 
 public class Mage extends Character implements MagicStaff {
     private final int manaPoint;
+    int attack;
 
     {
         manaPoint = 100;
     }
 
+    public Mage(String name, int hpPoint, int attack) {
+        super(name, hpPoint);
+        this.attack = attack;
+    }
     public Mage(String name, int hpPoint) {
         super(name, hpPoint);
     }
-
 
     public int getManaPoint() {
         return manaPoint;
